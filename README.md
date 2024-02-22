@@ -22,4 +22,4 @@ The code will be open source after the publication of the paper.
 ### 2. Fine-tune and predict
 #### finetune.py
      python finetune.py
-     The result is saved as changemap.bmp
+     The result is saved as changemap.bmp# ST-SGNet
