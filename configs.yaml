@@ -12,6 +12,7 @@ STG:
   nneighbor:        16
   n_c:              40 # 分类
   d_points:         4  # 点维度，包括位置xyz和特征
+  d_points_complex: 5  # 点维度，包括位置xyz和特征
   out_dim:          1024
 
   sts_dim:          128
@@ -37,21 +38,32 @@ STG:
 
 # 训练配置
 Train:
-  epochs:                15
+  epochs:                30
   batchsize:             32
   n_worker:              4         # 加载数据（batch）的线程数目
   lr:                    0.001     # 学习率
   resume:                ''        # 加载预训练权重的文件
   T_0:                   5         # 优化器参数
   T_mult:                2         # 优化器参数
-  finetune_train_ratio:  0.05       #finetune训练集比例
+  finetune_train_ratio:  0.03     #finetune训练集比例
   pretrained_model:     'checkpoints/best_w.pkl'
   finetune:             'finetune_checkpoints/'
   best_path:            'checkpoints/'
   final_model:          'finetune_checkpoints/best_finetune.pkl'
-# 训练数据配置
-Data:
-  image1: 'datasets/t1_9.bmp'
-  image2: 'datasets/t2_9.bmp'
-  label: 'datasets/label9.bmp'
 
+# 测试数据配置
+Data:
+  image1: 'datasets/t1_17.bmp'
+  image2: 'datasets/t2_17.bmp'
+  label: 'datasets/label17.bmp'
+
+Complex_data:
+  image1: 'datasets/1_2.bmp'
+  image2: 'datasets/2_2.bmp'
+  image1_i: 'datasets/i1.bin' # real part
+  image2_i: 'datasets/i2.bin'
+  image1_q: 'datasets/q1.bin' # imaginary part
+  image2_q: 'datasets/q2.bin'
+  label: 'datasets/label12.bmp'
+  img_height: 600
+  img_width: 600
