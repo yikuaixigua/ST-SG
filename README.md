@@ -1,6 +1,6 @@
 # Limited Training Data SAR Image Change Detection via Spatial-Temporal Semantic and Geographic Correlation
 
-The code will be open source after the publication of the paper. If you have any questions, please contact lhl_hit@hotmail.com
+The full code will be open source after the publication of the paper. If you have any questions, please contact lhl_hit@hotmail.com
 # How to use ?
 ## For SAR intensity image 
   ###  1. Basic configuration Settings 
