@@ -1,8 +1,8 @@
 # Limited Training Data SAR Image Change Detection via Spatial-Temporal Semantic and Geographic Correlation
 
-The full code will be open source after the publication of the paper. If you have any questions, please contact lhl_hit@hotmail.com
+The full code will be open source after the publication of the paper. If you have any questions, please contact at lhl_hit@hotmail.com
 # How to use ?
-## For SAR intensity image 
+## For SAR intensity image Dataset
   ###  1. Basic configuration Settings 
 please download the pre-trained model at 
 [**pre-trained model**](https://drive.google.com/file/d/1H-SrJZHFNBwFjwTMViVtEUznPc8bsDkH/view?usp=sharing)
@@ -28,11 +28,11 @@ please download the pre-trained model at
      The result is saved as changemap.bmp  
 
 -------------------
-## For Complex-valued SAR
+## For Complex-valued SAR image Dataset
     
 ###  1. Basic configuration Settings 
   #### config.yaml
-    Data: # bi-temporal SAR complex-valued dataset and ground truth
+   Complex_data: # bi-temporal SAR complex-valued dataset and ground truth
       image1: 'datasets/1_2.bmp'
       image2: 'datasets/2_2.bmp'
       image1_i: 'datasets/i1.bin' # real part
