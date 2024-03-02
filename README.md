@@ -32,7 +32,7 @@ please download the pre-trained model at
     
 ###  1. Basic configuration Settings 
   #### config.yaml
-   Complex_data: # bi-temporal SAR complex-valued dataset and ground truth
+    Complex_data: # bi-temporal SAR complex-valued dataset and ground truth
       image1: 'datasets/1_2.bmp'
       image2: 'datasets/2_2.bmp'
       image1_i: 'datasets/i1.bin' # real part
