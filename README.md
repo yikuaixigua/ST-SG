@@ -4,8 +4,7 @@ The full code will be open source after the publication of the paper. If you hav
 # How to use ?
 ## For SAR intensity image Dataset
   ###  1. Basic configuration Settings 
-please download the pre-trained model at 
-[**pre-trained model**](https://drive.google.com/file/d/1H-SrJZHFNBwFjwTMViVtEUznPc8bsDkH/view?usp=sharing)
+please download the pre-trained model at .
 , which we have pre-trained with unlabeled datasets.
   #### config.yaml
     GPU:
